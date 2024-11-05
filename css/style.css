@@ -1,0 +1,38 @@
+.container {
+  width: 1000px;
+  height: 1000px;
+  background-color: rgb(0, 0, 0);
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: lightgreen;
+  animation-name: quadrat-box;
+  animation-duration: 3000ms;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+}
+
+@keyframes quadrat-box {
+  0% {
+    transform: translate(10px) rotate(0deg) skew;
+    background-color: rgb(238, 144, 144);
+  }
+  25% {
+    transform: translate(890px, 10px) rotate(90deg);
+    background-color: rgb(0, 255, 0);
+  }
+  50% {
+    transform: translate(890px, 890px) rotate(-90deg);
+    background-color: rgb(30, 0, 255);
+  }
+  75% {
+    transform: translate(10px, 890px) rotate(90deg);
+    background-color: rgb(255, 0, 230);
+  }
+  100% {
+    transform: translate(10px, 10px) rotate(-90deg);
+    background-color: rgb(255, 0, 0);
+  }
+}
